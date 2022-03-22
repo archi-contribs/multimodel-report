@@ -1,0 +1,5 @@
+delimiters "^", "^"
+
+import "report.stg"
+import "frame.stg"
+import "model.stg"

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Multi-model HTML report site
+Bundle-SymbolicName: org.archicontribs.extendedreports;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Vincent Boulet
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.archimatetool.editor,
+ com.archimatetool.editor.browser
+Automatic-Module-Name: com.archimatetool.importexportexample
+Bundle-ClassPath: org.archicontribs.extendedreports.jar,
+ lib/ST-4.0.8.jar,
+ lib/antlr-runtime-4.4.jar
+Export-Package: org.archicontribs.extendedreports;
+  uses:="com.archimatetool.model,
+   org.eclipse.core.runtime,
+   org.eclipse.osgi.util,
+   org.eclipse.swt.widgets,
+   org.eclipse.core.commands,
+   org.eclipse.jface.wizard,
+   org.eclipse.ui.plugin"
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.archicontribs.extendedreports.ExtendedReportsPlugin
